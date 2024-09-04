@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +10,7 @@
             color: #fff;
             font-family: 'Courier New', Courier, monospace;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -19,37 +21,59 @@
             border: 1px solid #fff;
             padding: 20px;
             width: 300px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Glowing border */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         h1 {
             font-size: 2em;
             margin: 0;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glowing text */
         }
-        p {
-            font-size: 1em;
-            margin: 5px 0;
+        .title-email {
+            margin-top: 0; /* No margin */
+            text-align: center;
+        }
+        .title-email p {
+            margin: 0; /* No margin between paragraphs */
+        }
+        img {
+            margin-top: 15px;
+            width: 150px;
+            height: auto;
         }
         a {
             color: #fff;
-            text-decoration: none;
-        }
+            text-decoration: none;       
+ }
         .quote {
-            margin-top: 15px;
-            border-top: 1px solid #fff;
-            padding-top: 10px;
+            margin-top: 20px;
             font-style: italic;
+        }
+        .instagram-link {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #fff; /
+            text-shadow: none;
+        }
+        .instagram-link:hover {
+            color: #E4405F;
         }
     </style>
 </head>
 <body>
     <div class="card">
         <h1>Sherwin Pu</h1>
-        <p>&nbsp;</p>
-        <p>Sales Coordinator</p>
-        <p><a href="mailto:sherwinpu@eliteluxtech.com">sherwinpu@eliteluxtech.com</a></p>
-        <div class="quote">
-            <p>"Don't be so hard on your own beauty."</p>
+        <div class="title-email">
+            <p>Sales Coordinator</p>
+            <p><a href="mailto:sherwinpu@eliteluxtech.com">sherwinpu@eliteluxtech.com</a></p>
         </div>
+        <img src="sansuilogo.png" alt="Sansui Logo">
     </div>
+    <div class="quote">
+        <p>"Don't be so hard on your own beauty."</p>
+    </div>
+    <a href="https://www.instagram.com/yourusername" class="instagram-link" target="_blank">Instagram</a>
 </body>
 </html>
